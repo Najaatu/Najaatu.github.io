@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AbujaCapPlug</title>
+	 <link rel="icon" type="image/x-icon" href="caplogo.jpg">
+	 <link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<h1 style="background-color:lightpink; text-align: center; font-family: 'Gilda Display', serif;"><i><b>Abuja Cap Plug</b></i></h1>
+
+		<!-- <div class="logo">
+            <img src="capIcon.jpg" width="120px" height="80px">
+        </div> -->
+        <div class="topnav" id="myTopnav">
+  <a href="#index.html" class="active">Home</a>
+  <a href="aboutUs.html">AboutUs</a>
+  <a href="shopNow.html">ShopNow</a>
+  <a href="deliveryInfo.html">DeliveryInfo</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</header>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="cap1.jpg" style="width:100%">
+  <div class="text">Caption one</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="cap2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="cap3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="cap4.jpg" style="width:100%">
+  <div class="text">Caption four</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="cap5.jpg" style="width:100%">
+  <div class="text">Caption five</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="cap6.jpg" style="width:100%">
+  <div class="text">Caption six</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+
+<br>
+<br>
+
+<div>
+	<h1 style="font-family: 'Gilda Display', serif;"><center>HIGH QUALITY AND LUXURY CAPS</center></h1>
+</div>
+
+<div class="footer">
+	<div>
+		<div class="footer-logo"><img src="final.jpg" width="200px" height="80px"></div>
+	  <p><img src="loc.jpg" width="30px"> ABUJA
+         <img src="what.png" width="30px">+2348099778855
+         <img src="message.png" width="30px">mujib.almax@gmail.com
+         <img src="insta.jpg" width="30px"><a href="https://@abujacap_plug/instagram.com"> @abujacap_plug</a></p>
+         <img src="github.jpg" width="30px"><a href="https://najaatu.github.io/najaatu.github.io"> najaatu.github.io</a>
+ </div>
+</div>
+
+
+<div class="bottom-footer">
+	
+</div>
+<div class="bottom-footer-text">
+	<center>&copy; ABUJACAPPLUG ONLINE STORE 2021 CREATED BY NAJA'ATU ALMAKURA</center>
+
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>

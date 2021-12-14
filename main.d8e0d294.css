@@ -219,7 +219,7 @@ body {
 	font-size: 16px;
 	line-height: 1.58;
 	color: #555;
-	background-color: blue
+	background-color: plum;
 }
 button, input, select, textarea {
 	font-family: inherit;
@@ -3513,7 +3513,7 @@ button.close {
 	border: 1px solid #fff;
 	border-radius: 10px;
 	cursor: pointer;
-	background-color: #000\9;
+	background-color: #0009;
 	background-color: transparent
 }
 .carousel-indicators .active {
@@ -3788,9 +3788,9 @@ button.close {
 	}
 }
 body {
-	background-image: -webkit-linear-gradient(top, #ff0060, #ff6975);
-	background-image: -o-linear-gradient(top, #ff0060 0, #ff6975 100%);
-	background-image: linear-gradient(180deg, #ff0060 0, #ff6975);
+	background-image: -webkit-linear-gradient(top, #ee4db8, #ffc8ed);
+	background-image: -o-linear-gradient(top, #ee4db8, #ffc8ed 100%);
+	background-image: linear-gradient(180deg, #ee4db8, #ffc8ed);
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFF0060", endColorstr="#FFFF6975", GradientType=0)
 }
